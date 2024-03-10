@@ -10,13 +10,13 @@ if (m1 > m2) or (m1 == m2 and d1 > d2):
             break;
 
         idx -= 1
-        d2 += 1
+        d1 -= 1
 
-        if idx <= -6:
+        if idx <= -7:
             idx = 0
-        if md[m2] < d2:
-            m2 += 1
-            d2 = 1
+        if d1 <= 0:
+            m1 -= 1
+            d1 = md[m1]
 else:
     while True:
         if m1 == m2 and d1 == d2:
