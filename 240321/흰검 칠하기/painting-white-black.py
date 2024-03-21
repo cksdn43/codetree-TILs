@@ -23,6 +23,7 @@ for _ in range(n):
         cur_location += l
     tile.setdefault(cur_location, []).append(value)
 
+# 타일 색 계산
 for key in tile.keys():
     if tile[key].count(0) >= 2 and tile[key].count(1) >= 2:
         gray += 1
