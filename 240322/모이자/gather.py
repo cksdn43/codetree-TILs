@@ -1,11 +1,10 @@
 import sys
 
-INT_MAX = sys.maxsize
+min_sum = sys.maxsize
 
 n = int(input())
 arr = list(map(int, input().split()))
 
-min_sum = INT_MAX
 for i in range(n):
     sum_diff = 0
     for j in range(n):
