@@ -24,8 +24,8 @@ for _ in range(n): # T(n)
         if tile[cur_location][2] != 2:
             tile[cur_location][2] = color
             tile[cur_location][color] += 1
-        if tile[cur_location][0] >= 2 and tile[cur_location][1] >= 2:
-            tile[cur_location][2] = 2
+            if tile[cur_location][0] >= 2 and tile[cur_location][1] >= 2:
+                tile[cur_location][2] = 2
         cur_location += step
 
     # 도착한 타일 색칠  
@@ -34,8 +34,8 @@ for _ in range(n): # T(n)
     if tile[cur_location][2] != 2:
             tile[cur_location][2] = color
             tile[cur_location][color] += 1
-    if tile[cur_location][0] >= 2 and tile[cur_location][1] >= 2:
-            tile[cur_location][2] = 2
+        if tile[cur_location][0] >= 2 and tile[cur_location][1] >= 2:
+                tile[cur_location][2] = 2
 
 # 타일 색 계산
 for key in tile.keys(): # T(k)
