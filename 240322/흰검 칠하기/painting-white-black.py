@@ -32,10 +32,10 @@ for _ in range(n): # T(n)
     if cur_location not in tile:
         tile[cur_location] = [0, 0, -1]
     if tile[cur_location][2] != 2:
-            tile[cur_location][2] = color
-            tile[cur_location][color] += 1
+        tile[cur_location][2] = color
+        tile[cur_location][color] += 1
         if tile[cur_location][0] >= 2 and tile[cur_location][1] >= 2:
-                tile[cur_location][2] = 2
+            tile[cur_location][2] = 2
 
 # 타일 색 계산
 for key in tile.keys(): # T(k)
