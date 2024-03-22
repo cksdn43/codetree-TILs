@@ -2,8 +2,8 @@ import sys
 
 min_sum = sys.maxsize
 
-n = int(input())
-arr = list(map(int, input().split()))
+n = int(sys.stdin.readline())
+arr = list(map(int, sys.stdin.readline().split()))
 
 for i in range(n):
     sum_diff = 0
