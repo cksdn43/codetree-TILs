@@ -1,5 +1,5 @@
 # 변수 선언 및 입력
-cnt = 0
+cnt = 1
 max_cnt = 0
 
 N = int(input())
