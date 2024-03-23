@@ -15,5 +15,7 @@ for i in range(1,N):
             max_cnt = cnt
         cnt = 1
         cur_value = input_value
+if cnt > max_cnt:
+    max_cnt = cnt
 
 print(max_cnt)
