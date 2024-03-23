@@ -1,6 +1,6 @@
 # 변수 선언 및 입력
 cnt = 1
-max_cnt = 0
+max_cnt = 1
 
 N = int(input())
 cur_value = int(input())
