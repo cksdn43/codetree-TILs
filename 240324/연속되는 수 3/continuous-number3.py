@@ -1,5 +1,5 @@
 # 변수 선언 및 입력
-key, cnt = -1, 1
+key, cnt = -1, 0
 max_cnt = 1
 
 
