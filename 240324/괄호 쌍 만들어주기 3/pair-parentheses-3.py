@@ -1,9 +1,12 @@
+# 변수 선언 및 입력
 A = input()
+n = len(A)
 cnt = 0
 
-for a in range(len(A)):
+# 반복문을 돌며 괄호 쌍 계산
+for a in range(n):
     if A[a] == '(':
-        for b in range(a, len(A)):
+        for b in range(a, n):
             if A[b] == ')':
                 cnt += 1
 
