@@ -12,10 +12,8 @@ for _ in range(N-1):
     if cur_value > pre_value and state == 0:
         cnt += 1
     elif cur_value < pre_value and state == 0:
-        cnt = 2
+        cnt = 0
         state = 1
-    elif cur_value < pre_value and state == 1:
-        cnt += 1
     elif cur_value > pre_value and state == 1:
         cnt = 2
         state = 0
