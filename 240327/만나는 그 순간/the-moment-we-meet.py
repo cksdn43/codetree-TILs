@@ -44,5 +44,7 @@ for i in range(1,M + 1):
         if A[time] == B[time]:
             result = time
             break
+    if result == time:
+        break
 
 print(result)
